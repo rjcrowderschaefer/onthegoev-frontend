@@ -10,10 +10,30 @@ import TripPlanner from './pages/TripPlanner';
 import ChargingLocations from './pages/ChargingLocations';
 import Contact from './pages/Contact';
 import { Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { carsLoader } from './apiCalls';
 // import logo from './logo.svg';
 // import './App.css';
 
 function App() {
+  const [carInfo, setCarInfo] = useState([]);
+
+  useEffect(() => {
+    const fetchCars = async () => {
+      try {
+        const data = await carsLoader();
+        setCarInfo(data);
+      } catch(err) {
+        console.log(err);
+      }
+    }
+    fetchCars();
+  }, []);
+
+  if (!carInfo) {
+    return(<h1>Loading...</h1>)
+  }
+  
   return (
     <>
       <header>
@@ -25,7 +45,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/top-evs-2023' element={<TopEvs />} />
+          <Route path='/top-evs-2023' element={<TopEvs cars={carInfo}/>} />
           <Route path='/top-evs-2023/:id' element={<CarDetails />} />
           <Route path='/before-you-go' element={<BeforeYouGo />} />
           <Route path='/trip-planner' element={<TripPlanner/>} />
