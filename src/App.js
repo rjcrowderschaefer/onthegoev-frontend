@@ -17,6 +17,7 @@ import { carsLoader } from './apiCalls';
 
 function App() {
   const [carInfo, setCarInfo] = useState([]);
+  const [tripInfo, setTripInfo] = useState([]);
 
   useEffect(() => {
     const fetchCars = async () => {
@@ -33,7 +34,7 @@ function App() {
   if (!carInfo) {
     return(<h1>Loading...</h1>)
   }
-  
+
   return (
     <>
       <header>
@@ -48,7 +49,7 @@ function App() {
           <Route path='/top-evs-2023' element={<TopEvs cars={carInfo}/>} />
           <Route path='/top-evs-2023/:id' element={<CarDetails />} />
           <Route path='/before-you-go' element={<BeforeYouGo />} />
-          <Route path='/trip-planner' element={<TripPlanner/>} />
+          <Route path='/trip-planner' element={<TripPlanner trips={tripInfo}/>} />
           <Route path='/charging-locations' element={<ChargingLocations/>} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact/>} />

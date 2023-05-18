@@ -1,4 +1,4 @@
-function TopEvs( {cars}) {
+function TopEvs( {cars} ) {
     return cars.map((car) => (
         <div className="cars">
             <img className="car-image" src={car.img1} alt={car.make} />
