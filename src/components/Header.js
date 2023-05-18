@@ -5,25 +5,25 @@ function Header(props) {
             <nav>
                 <ul className="nav">
                     <li className="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
+                        <a className="nav-link active" href="/">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/top-evs-2023">Top EVs 2023</a>
+                        <a className="nav-link" href="/top-evs-2023">Top EVs 2023</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/before-you-go">Before You Go</a>
+                        <a className="nav-link" href="/before-you-go">Before You Go</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/trip-planner">Trip Planner</a>
+                        <a className="nav-link" href="/trip-planner">Trip Planner</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/charging-locations">Charging Locations</a>
+                        <a className="nav-link" href="/charging-locations">Charging Locations</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a className="nav-link" href="/about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a className="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </nav>

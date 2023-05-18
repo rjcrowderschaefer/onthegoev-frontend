@@ -2,7 +2,7 @@ function Footer(props) {
     return (
         <>
             <div className="footer">
-                <h7 className="footer-text">OTG! EV Footer</h7>
+                <h6 className="footer-text">OTG! EV Footer</h6>
 
             </div>
         </>
