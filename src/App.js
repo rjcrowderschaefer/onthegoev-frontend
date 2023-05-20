@@ -9,6 +9,7 @@ import CarDetails from './pages/CarDetails';
 import BeforeYouGo from './pages/BeforeYouGo';
 import TripPlanner from './pages/TripPlanner';
 import TripDetails from './pages/TripDetails';
+import TripNew from './pages/TripNew';
 import TripEdit from './pages/TripEdit';
 import TripDelete from './pages/TripDelete';
 import ChargingLocations from './pages/ChargingLocations';
@@ -67,6 +68,7 @@ function App() {
           <Route path='/before-you-go' element={<BeforeYouGo />} />
           <Route path='/trip-planner'>
             <Route path='' element={<TripPlanner />} />
+            <Route path='new' element={<TripNew />} />
             <Route path=':id'>
               <Route path='' element={<TripDetails />} />
               <Route path='edit' element={<TripEdit />} />
