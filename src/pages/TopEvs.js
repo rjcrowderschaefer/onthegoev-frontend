@@ -1,5 +1,23 @@
-function TopEvs( {cars} ) {
-    return cars.map((car) => (
+import { useState, useEffect } from 'react';
+import { carsLoader } from '../apiCalls';
+
+function TopEvs() {
+    const [carInfo, setCarInfo] = useState([]);
+
+    useEffect(() => {
+        const fetchCars = async () => {
+            try {
+                const data = await carsLoader();
+                setCarInfo(data);
+        } catch(err) {
+            console.log(err);
+        }
+    }
+    fetchCars();
+}, []);
+
+
+    return carInfo.map((car) => (
         <div className="cars">
             <img className="car-image" src={car.img1} alt={car.make} />
             <h2 className="car-header">{car.year} {car.make} {car.model}</h2>

@@ -5,3 +5,9 @@ export const carsLoader = async () => {
     const cars = await response.json();
     return cars;
 }
+
+export const tripLoader = async () => {
+    const response = await fetch(URL + "/trip-planner");
+    const trips = await response.json();
+    return trips;
+}
