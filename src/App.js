@@ -8,6 +8,7 @@ import TopEvs from './pages/TopEvs';
 import CarDetails from './pages/CarDetails';
 import BeforeYouGo from './pages/BeforeYouGo';
 import TripPlanner from './pages/TripPlanner';
+import TripDetails from './pages/TripDetails';
 import ChargingLocations from './pages/ChargingLocations';
 import Contact from './pages/Contact';
 import { Route, Routes } from 'react-router-dom';
@@ -63,6 +64,7 @@ function App() {
           <Route path='/top-evs-2023/:id' element={<CarDetails />} />
           <Route path='/before-you-go' element={<BeforeYouGo />} />
           <Route path='/trip-planner' element={<TripPlanner />} />
+          <Route path='/trip-planner/:id' element={<TripDetails />} />
           <Route path='/charging-locations' element={<ChargingLocations/>} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact/>} />
