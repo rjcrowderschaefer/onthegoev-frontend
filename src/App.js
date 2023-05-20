@@ -9,6 +9,8 @@ import CarDetails from './pages/CarDetails';
 import BeforeYouGo from './pages/BeforeYouGo';
 import TripPlanner from './pages/TripPlanner';
 import TripDetails from './pages/TripDetails';
+import TripEdit from './pages/TripEdit';
+import TripDelete from './pages/TripDelete';
 import ChargingLocations from './pages/ChargingLocations';
 import Contact from './pages/Contact';
 import { Route, Routes } from 'react-router-dom';
@@ -63,8 +65,14 @@ function App() {
           <Route path='/top-evs-2023' element={<TopEvs />} />
           <Route path='/top-evs-2023/:id' element={<CarDetails />} />
           <Route path='/before-you-go' element={<BeforeYouGo />} />
-          <Route path='/trip-planner' element={<TripPlanner />} />
-          <Route path='/trip-planner/:id' element={<TripDetails />} />
+          <Route path='/trip-planner'>
+            <Route path='' element={<TripPlanner />} />
+            <Route path=':id'>
+              <Route path='' element={<TripDetails />} />
+              <Route path='edit' element={<TripEdit />} />
+              <Route path='delete' element={<TripDelete />} />
+            </Route>
+          </Route>
           <Route path='/charging-locations' element={<ChargingLocations/>} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact/>} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function TripDetails() {
     const {id} = useParams();
@@ -15,10 +16,6 @@ function TripDetails() {
             console.log(err)
         }
     }
-
-    useEffect(() => {
-        fetchTripDetails();
-    }, [])
 
     function loaded() {
         return(
@@ -41,14 +38,22 @@ function TripDetails() {
                             <h3>Notes: {trip.notes}</h3>
                         </div>
                         <div className="modify-trip">
-                            <a href="/">Edit Trip</a>
-                            <a href="/">Delete Trip</a>
+                            <Link to={`/trip-planner/${id}/edit`}>
+                                <button>Edit</button>
+                            </Link>
+                            <Link to={`/trip-planner/${id}/delete`}>
+                                <button>Delete</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </>
         )
     }
+
+    useEffect(() => {
+        fetchTripDetails();
+    }, [])
 
     function loading() {
         return (
