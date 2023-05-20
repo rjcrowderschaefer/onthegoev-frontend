@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function CreateTrip() {
     const navigate = useNavigate();
@@ -25,7 +25,6 @@ function CreateTrip() {
         try {
             let myTrips = await fetch('http://localhost:4000/trip-planner')
             myTrips = await myTrips.json();
-
         } catch(err) {
             console.log(err);
         }

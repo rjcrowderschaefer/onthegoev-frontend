@@ -14,6 +14,7 @@ import TripEdit from './pages/TripEdit';
 import TripDelete from './pages/TripDelete';
 import ChargingLocations from './pages/ChargingLocations';
 import Contact from './pages/Contact';
+import ContactConfirmation from './pages/ContactConfirmation';
 import { Route, Routes } from 'react-router-dom';
 // import { useState, useEffect } from "react";
 // import { carsLoader } from './apiCalls';
@@ -77,7 +78,10 @@ function App() {
           </Route>
           <Route path='/charging-locations' element={<ChargingLocations/>} />
           <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/contact'>
+            <Route path='' element={<Contact/>} />
+            <Route path='thank-you' element={<ContactConfirmation/>} />
+          </Route>
         </Routes>
         <Footer />
       </main>
