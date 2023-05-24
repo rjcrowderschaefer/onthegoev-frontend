@@ -37,7 +37,55 @@
   }
 }
 
+.header {
+  color: white;
+  background-color: #013e08;
+  padding: 15px 25px 10px;
+}
+
+.navbar {
+  background-color: #a7beaa;
+  color: black;
+  padding: 5px 10px 5px;
+}
+
 .trip-image {
   width: 500px;
   height: auto;
 }
+
+.footer {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #c4c4c4;
+  padding: 10px 0px 10px 150px;
+
+}
+
+.footer-logo {
+  color: red;
+}
+
+.footer-info {
+  padding: 0 100px 0 0;
+
+}
+
+/* #navigation li a {
+  color: red;
+}
+
+#navigation li a:hover {
+  color: green;
+}
+
+#navigation li a:active {
+  color: white;
+} */
+
+

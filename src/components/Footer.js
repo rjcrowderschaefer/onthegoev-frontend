@@ -1,10 +1,13 @@
+import { FaReact } from 'react-icons/fa';
+
 function Footer(props) {
     return (
         <>
             <div className="footer">
-                <h6 className="footer-text">OTG! EV Footer</h6>
-
+                    <div className="footer-logo">OTG! EV Footer</div>
+                    <div className="footer-info">Website built by RJ Crowder-Schaefer using React <FaReact /></div>
             </div>
+            
         </>
     )
 }

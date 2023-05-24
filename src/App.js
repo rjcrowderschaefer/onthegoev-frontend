@@ -22,44 +22,14 @@ import { Route, Routes } from 'react-router-dom';
 // import './App.css';
 
 function App() {
-  // const [carInfo, setCarInfo] = useState([]);
-  // // const [tripInfo, setTripInfo] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchCars = async () => {
-  //     try {
-  //       const data = await carsLoader();
-  //       setCarInfo(data);
-  //     } catch(err) {
-  //       console.log(err);
-  //     }
-  //   }
-  //   fetchCars();
-  // }, []);
-
-  // useEffect(() => {
-  //   const fetchTrips = async () = {
-  //     try {
-  //       const data = await tripLoader();
-  //       setTripInfo(data);
-  //     } catch(err) {
-  //       console.log(err);
-  //     }
-  //   }
-  //   fetchTrips();
-  // }, []);
-
-  // if (!carInfo) {
-  //   return(<h1>Loading...</h1>)
-  // }
 
   return (
     <>
-      <header>
+      {/* <header>
         <h1>
           <a href="/">On The Go! EV</a>
         </h1>
-      </header>
+      </header> */}
       <main>
         <Header />
         <Routes>
