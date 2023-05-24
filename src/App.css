@@ -54,6 +54,10 @@
   height: auto;
 }
 
+.grid {
+  display: grid;
+}
+
 .footer {
   position: fixed;
   display: flex;

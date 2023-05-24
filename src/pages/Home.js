@@ -1,9 +1,12 @@
 function Home() {
     return (
         <>
-            <body className="home">
             <h1> This is the home page</h1>
-            </body>
+            <div className='grid'>
+      <div className='g-col-6 g-col-md-4'>.g-col-6 .g-col-md-4</div>
+      <div className='g-col-6 g-col-md-4'>.g-col-6 .g-col-md-4</div>
+      <div className='g-col-6 g-col-md-4'>.g-col-6 .g-col-md-4</div>
+    </div>
         </>
     )
 }
