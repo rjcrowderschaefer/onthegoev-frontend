@@ -38,7 +38,7 @@ function TopEvs() {
         <div className="cars">
             <h2 className="page-title">Best Electric Vehicles of 2023</h2>
             <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus. </p>
-            <Row gutter={[75, 16]} justify="left" alidn="top">
+            <Row gutter={[75, 16]} justify="left" align="top">
                 {
                     carInfo.map(car => {
                         return (
