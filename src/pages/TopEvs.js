@@ -47,7 +47,7 @@ function TopEvs() {
                                 <div className="car-image">
                                     <img src={car.img1} alt={car.make} />
                                 </div>
-                            <h2 className="car-header"><b>#{car.rank}</b> {car.year} {car.make} {car.model}</h2>
+                            <h2 className="car-header"><b>#{car.rank}:</b> {car.year} {car.make} {car.model}</h2>
                             <p className="car-review">{car.review} <a href={`top-evs-2023/${car._id}`}>Read more</a></p>
                             <div className="car-card-details">
                                 <h6 className="car-score"><b>{car.score}</b> <div className="card-label">score</div></h6>
