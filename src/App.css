@@ -198,6 +198,7 @@ html, body {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 15px;
   /* top: 50%; */
 }
 
