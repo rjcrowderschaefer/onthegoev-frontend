@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { carsLoader } from '../apiCalls';
-import { Col, Divider, Row } from 'antd';
+import { Col, Row } from 'antd';
 
 function TopEvs() {
     const [carInfo, setCarInfo] = useState([]);

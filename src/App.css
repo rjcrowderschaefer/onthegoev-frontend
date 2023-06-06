@@ -1,3 +1,9 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -136,8 +142,16 @@ html, body {
 .page-title {
   margin: 25px 0 25px 0
 }
+/* 
+.page-intro {
+  font-size: 1.2em;
+} */
 
-.cars {
+#car-details-review {
+  font-size: 16px;
+}
+
+.cars, .car-details{
   padding: 0 50px;
 }
 
@@ -168,34 +182,58 @@ html, body {
   margin-top: auto;
 }
 
-/* .cars {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(3, 500px);
-  grid-template-rows: repeat(3, 100px);
-} */
+.car-details img {
+  width: 100%;
+  height: auto;
+}
 
+.details-list {
+  margin-top: 15px
+}
 
-/* .car-card {
-  grid-column: 1 / 3;
-  grid-row: 100%;
+.details-rating {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-style: solid;
-} */
+  position: relative;
+  /* top: 50%; */
+}
+
+#overall-rating {
+  position: relative;
+  background-color: #a7beaa;
+  font-size: 18px;
+  padding: 10px 25px;
+  top: 15px;
+  left: 45px;
+  border-radius: 25px;
+}
+
+#details-rating-score-container {
+  border: solid 1px #a6a4a4;
+  border-radius: 25px;
+  text-align: center;
+  padding: 35px 65px;
+  margin-bottom: 15px;
+}
+
+#car-details-score {
+  font-weight: bold;
+  font-size: 50px;
+}
 
 .footer {
   /* position: fixed; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #c4c4c4;
   padding: 10px 0px 10px 150px;
-  margin: 50px 0 0 0;
+  margin-top: auto;
+  /* margin: 50px 0 0 0; */
 }
 
 .footer-logo {
