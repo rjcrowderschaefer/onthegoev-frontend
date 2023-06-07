@@ -69,8 +69,8 @@ function Contact(props) {
                         </div>
                         <div className="row">
                             <div className="col">
-                            <label for="feedback">What do you want to share?</label>
-                            <textarea className="form-control" name="feedback" rows="3" onChange={handleChange} placeholder="We'd love to hear from you"/>
+                            <label for="feedback"></label>
+                            <textarea className="form-control" name="feedback" rows="3" onChange={handleChange} placeholder="We'd love to hear from you. What do you want to share?"/><br />
                             <button type="submit" className="button">Submit</button>
                             </div>
                         </div>

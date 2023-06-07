@@ -21,7 +21,7 @@ function TripDelete() {
         <>
             <div className="delete-trip-conf">
                 <h2 className="page-title">Confirm trip deletion</h2>
-                <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
+                <p className="page-intro">Use the trip planner tool to log and track your next adventure! The form below will help you determine the distance you'll be traveling and the number of charging stops required based on your vehicle type.</p>
                 <Link to='/trip-planner'>
                     <button class="delete btn btn-danger" onClick={deleteMyTrip}>Yes, delete</button>
                 </Link>

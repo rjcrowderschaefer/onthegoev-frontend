@@ -18,7 +18,7 @@ function Home() {
       <div className='home-bottom-left'>
         <img id="home-image-bottom" src="https://i.imgur.com/RZ5Nb2Z.png"></img>
       </div>
-      <div className='home-bottom-right'><div className="quote-text"><span id="quote-1">"</span>Electric car sales are expected to continue strongly through 2023. Over 2.3 million electric cars were sold in the first quarter, about 25% more than in the same period last year. We currently expect to see 14 million in sales by the end of 2023, representing a 35% year-on-year increase with new purchases accelerating in the second half of this year.<span id="quote-2">"</span>
+      <div className='home-bottom-right'><div className="quote-text"><b>Electric car sales are expected to continue strongly through 2023.</b> Over 2.3 million electric cars were sold in the first quarter, about 25% more than in the same period last year. We currently expect to see <b>14 million in sales by the end of 2023</b>, representing a 35% year-on-year increase with new purchases accelerating in the second half of this year.
       </div>
       </div>
     </div>

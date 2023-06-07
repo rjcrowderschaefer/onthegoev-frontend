@@ -30,7 +30,7 @@ function ChargingLocations() {
                 <Row>
                     <Col span={14}>
                         <h2 className="page-title">List of charging stations</h2>
-                        <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
+                        <p className="page-intro">Find electric vehicle charging stations within the United States and Canada.</p>
                     </Col>
                     <Col span={10}>
                         <div className="location-search">

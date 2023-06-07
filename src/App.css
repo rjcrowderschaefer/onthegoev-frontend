@@ -196,18 +196,9 @@ html {
   color: white;
 }
 
-#quote-1 {
-  position: absolute;
-  font-size: 100px;
-  top: 1010px;
-  left: 600px
-}
-
-#quote-2 {
-  position: absolute;
-  font-size: 100px;
-  top: 1165px;
-  left: 1115px
+.quote-text {
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 .page-title {
@@ -326,6 +317,16 @@ html {
   padding: 0 50px;
 }
 
+.trip-planner a {
+  text-decoration: none;
+  color: black;
+}
+
+.trip-column-left a {
+  text-decoration: none;
+  color: black;
+}
+
 .trip-column-left {
   padding: 25px 0px 0px 60px;
 }
@@ -414,7 +415,7 @@ input[id=search-button] {
   border: none;
   position: absolute;
   top: 92px;
-  left: 298px;
+  left: 339px;
   z-index: 2;
   width: 35px;
   height: 35px;
