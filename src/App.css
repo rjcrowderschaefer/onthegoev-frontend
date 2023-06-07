@@ -298,6 +298,10 @@ html, body {
   padding: 0 50px;
 }
 
+.edit-trip {
+  padding: 0 50px;
+}
+
 .footer {
   /* position: fixed; */
   display: flex;

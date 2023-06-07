@@ -46,25 +46,90 @@ function TripEdit() {
 function loaded() {
     return(
         <>
-            <h2>Edit {trip.tripName} Trip</h2>
+            <div className="edit-trip">
+            <h2 className="page-title">Edit {trip.tripName} Trip</h2>
+            <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
             <form onSubmit={handleSubmit}>
-                Trip Name: <input type="text" value={trip.tripName} name="tripName" onChange={handleChange} />
-                Trip Owner: <input type="text" value={trip.tripOwner} name="tripOwner" onChange={handleChange} />
-                # Travelers: <input type="number" value={trip.numTravelers} name="numTravelers" onChange={handleChange} />
-                Start Date: <input type="text" value={trip.tripStart} name="startDate" onChange={handleChange} />
-                End Date: <input type="text" value={trip.tripEnd} name="endDate" onChange={handleChange} />
-                Car Year: <input type="number" value={trip.carYear} name="carYear" onChange={handleChange} />
-                Car Make: <input type="text" value={trip.carMake} name="carMake" onChange={handleChange} />
-                Car Model: <input type="text" value={trip.carModel} name="carModel" onChange={handleChange} />
-                Start Point: <input type="text" value={trip.startPoint} name="startPoint" onChange={handleChange} />
-                End Point: <input type="text" value={trip.endPoint} name="endPoint" onChange={handleChange} />
-                Total Trip Distance: <input type="number" value={trip.totalDistance} name="totalDistance" onChange={handleChange} />
-                Total MPC Hwy: <input type="number" value={trip.distanceHwy} name="distanceHwy" onChange={handleChange} />
-                Total Charges: <input type="number" value={trip.numStops} name="numStops" onchange={handleChange} />
-                Notes: <input type="text" value={trip.notes} name="notes" onChange={handleChange} />
-                Image: <input type="text" value={trip.img} name="img" onChange={handleChange} />
-                <button>Edit Trip</button>
+                
+                <div className="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="tripName">Trip Name</label>
+                            <input type="text" class="form-control" name="tripName" onChange={handleChange} value={trip.tripName}/>
+                        </div>
+                        <div class="col">
+                            <label for="tripOwner">Trip Owner:</label>
+                            <input type="text" class="form-control" name="tripOwner" onChange={handleChange} value={trip.tripOwner}/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label># Travelers:</label>
+                            <input type="number" class="form-control" name="numTravelers" onChange={handleChange} value={trip.numTravelers}/>
+                        </div>
+                        <div class="col">
+                            <label>Start Date:</label>
+                            <input type="text" class="form-control" name="tripStart" onChange={handleChange} value={trip.tripStart}/>
+                        </div>
+                        <div class="col">
+                            <label>End Date:</label>
+                            <input type="text" class="form-control" name="tripEnd" onChange={handleChange} value={trip.tripEnd}/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Car Year:</label>
+                            <input type="number" class="form-control" name="carYear" onChange={handleChange} value={trip.carYear}/>
+                        </div>
+                        <div class="col">
+                            <label>Car Make:</label>
+                            <input type="text" class="form-control" name="carMake" onChange={handleChange} value={trip.carMake}/>
+                       </div>
+                        <div class="col">
+                            <label>Car Model:</label>
+                            <input type="text" class="form-control" name="carModel" onChange={handleChange} value={trip.carModel}/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Start Point:</label>
+                            <input type="text" class="form-control" name="startPoint" onChange={handleChange} value={trip.startPoint}/>
+                        </div>
+                        <div class="col">
+                            <label>End Point:</label>
+                            <input type="text" class="form-control" name="endPoint" onChange={handleChange} value={trip.endPoint}/>
+                        </div>
+                        <div class="col">
+                            <label>Total Trip Distance:</label>
+                            <input type="number" class="form-control" name="totalDistance" onChange={handleChange} value={trip.totalDistance}/>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col">
+                            <label>Total MPC Hwy:</label>
+                            <input type="number" class="form-control" name="distanceHwy" onChange={handleChange} value={trip.distanceHwy}/>
+                        </div>
+                        <div class="col">
+                            <label>Total Charges:</label>
+                            <input type="number" class="form-control" name="numStops" onChange={handleChange} value={trip.numStops}/>
+                        </div>
+                        <div class="col">
+                            <label>Image:</label>
+                            <input type="text" class="form-control" name="img" onChange={handleChange} value={trip.img} />
+                        </div>
+                    <div class="row">
+                        
+                        </div>
+                        <div class="col">
+                            <label for="notes">Notes:</label>
+                            <textarea class="form-control" name="notes" rows="3" onChange={handleChange} value={trip.notes} />
+                        </div>
+                    </div>
+                </div><br />
+                <button type="submit" class="btn btn-primary">Edit Trip</button>
             </form>
+        </div>
         </>
     )
 }
