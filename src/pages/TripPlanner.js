@@ -40,14 +40,11 @@ function TripPlanner() {
             <div className="trip-planner">
                 <h2 className="page-title">Planned Trips</h2>
                 <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
+                <div className="button">
+                    <a href='/trip-planner/new'>Add New Trip</a>
+                </div>
             </div>
-            <Row gutter={[75, 15]} justify="left" align="top">
-                <Col span={24}>
-                    <div className="add-trip">
-                        <a href='/trip-planner/new'>Add New Trip</a>
-                    </div>
-                </Col>
-            </Row>
+            
             <Row gutter={[16]} justify="left" align="top">
                 {
                     tripInfo.map(trip => {

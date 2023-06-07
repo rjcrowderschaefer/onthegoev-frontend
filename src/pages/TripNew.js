@@ -143,7 +143,7 @@ function CreateTrip() {
                         </div>
                     </div>
                 </div><br />
-                <button type="submit" class="btn btn-primary">Create Trip</button>
+                <button type="submit" class="button ">Create Trip</button>
             </form>
         </div>
         </>

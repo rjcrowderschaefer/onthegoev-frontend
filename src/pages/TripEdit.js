@@ -127,7 +127,7 @@ function loaded() {
                         </div>
                     </div>
                 </div><br />
-                <button type="submit" class="btn btn-primary">Edit Trip</button>
+                <button type="submit" class="button">Edit Trip</button>
             </form>
         </div>
         </>
