@@ -256,6 +256,10 @@ html, body {
   padding: 0 50px;
 }
 
+.trip-column-left {
+  padding: 25px 0px 0px 60px;
+}
+
 .add-trip {
   background-color: #a7beaa;
   font-size: 16px;
@@ -268,12 +272,26 @@ html, body {
 .trip-image {
   width: 95%;
   height: auto;
-  margin: 25px 0 0 30px;
+  margin: 20 0 0 30px;
+}
+
+.show-trip {
+  display: inline;
+  margin: 100px 0px 0px 10px;
+  padding: 0 0
+}
+
+.modify-trip {
+  display: inline;
+  padding: 0 10px;
+}
+
+.delete-trip {
+  display: inline;
 }
 
 .trip-details {
-  margin: 60px 0 0 30px;
-  padding: 0 0
+  margin: 75px 0 0 0;
 }
 
 .footer {

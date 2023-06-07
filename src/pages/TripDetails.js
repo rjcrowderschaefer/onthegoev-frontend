@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
+import { Col, Row } from 'antd';
 
 function TripDetails() {
     const {id} = useParams();
@@ -20,22 +21,26 @@ function TripDetails() {
     function loaded() {
         return(
             <>
+                <div className="trip-show">
+                    <h2 className="page-title">{trip.tripName}</h2>
                 <div key={id}>
                     <div className="trip-details-container">
                     <img className="trip-image" src={trip.img} alt={trip.tripName} />
                         <div className="trip-details">
-                            <h3>Trip Name: {trip.tripName}</h3>
+                          
                             <h3>Trip Owner: {trip.tripOwner}</h3>
                             <h3># Travelers: {trip.numTravelers}</h3>
                             <h3>Start Date: {trip.tripStart}</h3>
                             <h3>End Date: {trip.tripEnd}</h3>
                             <h3>Car: {trip.carYear} {trip.carMake} {trip.carModel}</h3>
+                        
                             <h3>Start Point: {trip.startPoint}</h3>
                             <h3>End Point: {trip.endPoint}</h3>
                             <h3>Total Trip Distance: {trip.totalDistance}</h3>
                             <h3>Total MPC Hwy: {trip.distanceHwy}</h3>
                             <h3>Total Charges:{trip.numStops}</h3>
                             <h3>Notes: {trip.notes}</h3>
+                        
                         </div>
                         <div className="modify-trip">
                             <Link to={`/trip-planner/${id}/edit`}>
@@ -47,7 +52,10 @@ function TripDetails() {
                         </div>
                     </div>
                 </div>
+               
+                </div>
             </>
+
         )
     }
 

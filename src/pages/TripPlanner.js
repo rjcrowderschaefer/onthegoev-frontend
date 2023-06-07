@@ -54,13 +54,24 @@ function TripPlanner() {
                         return (
                             <>
                             <Col span={8}>
-                                <div className="trip-image">
-                                    <img className="trip-image" src={trip.img} alt={trip.tripName} />
+                                <div className="trip-column-left">
+                                    <h3 className="trio-name">{trip.tripName}</h3>
+                                    <div className="trip-image">
+                                        <img className="trip-image" src={trip.img} alt={trip.tripName} />
+                                    </div>
+                                    <div className="show-trip">
+                                            <a href={`trip-planner/${trip._id}`}>Show details</a>
+                                    </div>
+                                    <div className="modify-trip">
+                                        <a href={`/trip-planner/${trip._id}/edit`}>Edit Trip</a>
+                                    </div>
+                                    <div className="delete-trip">
+                                        <a href={`/trip-planner/${trip._id}/delete`}>Delete Trip</a>
+                                    </div>
                                 </div>
                             </Col>
                             <Col span={8}>
                                 <div className="trip-details">
-                                    <h5>{trip.tripName}</h5>
                                     <h5>Trip Owner: {trip.tripOwner}</h5>
                                     <h5># Travelers: {trip.numTravelers}</h5>
                                     <h5>Start Date: {trip.tripStart}</h5>
@@ -78,7 +89,7 @@ function TripPlanner() {
                                 <h5>Notes: {trip.notes}</h5>
                                 </div>
                             </Col>
-                            <hr />
+                            
                             </>
                         )
                            
