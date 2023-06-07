@@ -19,13 +19,16 @@ function TripDelete() {
 
     return (
         <>
-            <h2>Confirm trip deletion</h2>
-            <Link to='/trip-planner'>
-                <button onClick={deleteMyTrip}>Yes, delete</button>
-            </Link>
-            <Link to={`/trip-planner/${id}`}>
-                <button>No, cancel</button>
-            </Link>
+            <div className="delete-trip-conf">
+                <h2 className="page-title">Confirm trip deletion</h2>
+                <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
+                <Link to='/trip-planner'>
+                    <button class="delete btn btn-danger" onClick={deleteMyTrip}>Yes, delete</button>
+                </Link>
+                <Link to={`/trip-planner/${id}`}>
+                    <button class="cancel btn btn-secondary">No, cancel</button>
+                </Link>
+            </div>
         </>
     )
 }

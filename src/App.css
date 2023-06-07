@@ -302,6 +302,14 @@ html, body {
   padding: 0 50px;
 }
 
+.delete-trip-conf {
+  padding: 0 50px;
+}
+
+.delete {
+  margin: 0 15px 0 0;
+}
+
 .footer {
   /* position: fixed; */
   display: flex;
