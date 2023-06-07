@@ -5,7 +5,7 @@ function Footer(props) {
         <>
             <div className="footer-pin">
                 <div className="footer">
-                        <div className="footer-info">Website built by RJ Crowder-Schaefer using React <FaReact /></div>
+                        <div className="footer-info">Built by RJ Crowder-Schaefer using React <FaReact /></div>
                 </div>
             </div>
             

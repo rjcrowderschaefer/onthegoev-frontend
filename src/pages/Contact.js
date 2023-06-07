@@ -50,7 +50,7 @@ function Contact(props) {
         <>
             <div className="contact">
                 <h2 className="page-title">Get in touch</h2>
-                <p className="page-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus. </p>
+                <p className="page-info">Have a question or want to give us some feedback? Please use the form below!</p>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <div className="row">
