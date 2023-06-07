@@ -52,82 +52,82 @@ function loaded() {
             <form onSubmit={handleSubmit}>
                 
                 <div className="form-group">
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label for="tripName">Trip Name</label>
-                            <input type="text" class="form-control" name="tripName" onChange={handleChange} value={trip.tripName}/>
+                            <input type="text" className="form-control" name="tripName" onChange={handleChange} value={trip.tripName}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label for="tripOwner">Trip Owner:</label>
-                            <input type="text" class="form-control" name="tripOwner" onChange={handleChange} value={trip.tripOwner}/>
+                            <input type="text" className="form-control" name="tripOwner" onChange={handleChange} value={trip.tripOwner}/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label># Travelers:</label>
-                            <input type="number" class="form-control" name="numTravelers" onChange={handleChange} value={trip.numTravelers}/>
+                            <input type="number" className="form-control" name="numTravelers" onChange={handleChange} value={trip.numTravelers}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Start Date:</label>
-                            <input type="text" class="form-control" name="tripStart" onChange={handleChange} value={trip.tripStart}/>
+                            <input type="text" className="form-control" name="tripStart" onChange={handleChange} value={trip.tripStart}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>End Date:</label>
-                            <input type="text" class="form-control" name="tripEnd" onChange={handleChange} value={trip.tripEnd}/>
+                            <input type="text" className="form-control" name="tripEnd" onChange={handleChange} value={trip.tripEnd}/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label>Car Year:</label>
-                            <input type="number" class="form-control" name="carYear" onChange={handleChange} value={trip.carYear}/>
+                            <input type="number" className="form-control" name="carYear" onChange={handleChange} value={trip.carYear}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Car Make:</label>
-                            <input type="text" class="form-control" name="carMake" onChange={handleChange} value={trip.carMake}/>
+                            <input type="text" className="form-control" name="carMake" onChange={handleChange} value={trip.carMake}/>
                        </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Car Model:</label>
-                            <input type="text" class="form-control" name="carModel" onChange={handleChange} value={trip.carModel}/>
+                            <input type="text" className="form-control" name="carModel" onChange={handleChange} value={trip.carModel}/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label>Start Point:</label>
-                            <input type="text" class="form-control" name="startPoint" onChange={handleChange} value={trip.startPoint}/>
+                            <input type="text" className="form-control" name="startPoint" onChange={handleChange} value={trip.startPoint}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>End Point:</label>
-                            <input type="text" class="form-control" name="endPoint" onChange={handleChange} value={trip.endPoint}/>
+                            <input type="text" className="form-control" name="endPoint" onChange={handleChange} value={trip.endPoint}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Total Trip Distance:</label>
-                            <input type="number" class="form-control" name="totalDistance" onChange={handleChange} value={trip.totalDistance}/>
+                            <input type="number" className="form-control" name="totalDistance" onChange={handleChange} value={trip.totalDistance}/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
                        
-                        <div class="col">
+                        <div className="col">
                             <label>Total MPC Hwy:</label>
-                            <input type="number" class="form-control" name="distanceHwy" onChange={handleChange} value={trip.distanceHwy}/>
+                            <input type="number" className="form-control" name="distanceHwy" onChange={handleChange} value={trip.distanceHwy}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Total Charges:</label>
-                            <input type="number" class="form-control" name="numStops" onChange={handleChange} value={trip.numStops}/>
+                            <input type="number" className="form-control" name="numStops" onChange={handleChange} value={trip.numStops}/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Image:</label>
-                            <input type="text" class="form-control" name="img" onChange={handleChange} value={trip.img} />
+                            <input type="text" className="form-control" name="img" onChange={handleChange} value={trip.img} />
                         </div>
-                    <div class="row">
+                    <div className="row">
                         
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label for="notes">Notes:</label>
-                            <textarea class="form-control" name="notes" rows="3" onChange={handleChange} value={trip.notes} />
+                            <textarea className="form-control" name="notes" rows="3" onChange={handleChange} value={trip.notes} />
                         </div>
                     </div>
                 </div><br />
-                <button type="submit" class="button">Edit Trip</button>
+                <button type="submit" className="button">Edit Trip</button>
             </form>
         </div>
         </>

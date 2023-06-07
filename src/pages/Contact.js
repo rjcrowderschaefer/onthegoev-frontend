@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Contact(props) {
-    // const [contactInfo, setContactInfo] = useState([]);
     const navigate = useNavigate();
     const [contactForm, setContactForm] = useState({
         firstName: "",
@@ -49,20 +48,35 @@ function Contact(props) {
     
     return (
         <>
-            <h1>This is my contact page</h1>
-            <h2>Get in touch</h2>
-            <form onSubmit={handleSubmit}>
-                <label>First Name:</label>
-                <input type="text" name="firstName" onChange={handleChange} placeholder="What's your first name?"/>
-                <label>Last Name:</label>
-                <input type="text" name="lastName" onChange={handleChange} placeholder="What's your last name?"/>
-                <label>Email Address:</label>
-                <input type="text" name="email" onChange={handleChange} placeholder="What's your email address?"/>
-                <label>What do you want to share?</label>
-                <input type="text" name="feedback" onChange={handleChange} placeholder="We'd love to hear from you"/>
-                <button>Submit</button>
-            
-            </form>
+            <div className="contact">
+                <h2 className="page-title">Get in touch</h2>
+                <p className="page-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus. </p>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <div className="row">
+                            <div className="col">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" className="form-control" name="firstName" onChange={handleChange} placeholder="What's your first name?"/>
+                            </div>
+                            <div className="col">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" className="form-control" name="lastName" onChange={handleChange} placeholder="What's your last name?"/>
+                            </div>
+                            <div className="col">
+                                <label for="email">Email Address:</label>
+                                <input type="text" className="form-control" name="email" onChange={handleChange} placeholder="What's your email address?"/>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                            <label for="feedback">What do you want to share?</label>
+                            <textarea className="form-control" name="feedback" rows="3" onChange={handleChange} placeholder="We'd love to hear from you"/>
+                            <button type="submit" className="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </>
     )
 }

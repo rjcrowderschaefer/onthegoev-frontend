@@ -4,23 +4,6 @@ import { Col, Row } from 'antd';
 
 function TripPlanner() {
     const [tripInfo, setTripInfo] = useState([]);
-    // const [tripForm, setTripForm] = useState({
-    //     tripName: "",
-    //     tripOwner: "",
-    //     numTravelers: 0,
-    //     tripStart: "",
-    //     tripEnd: "",
-    //     carYear: 0,
-    //     carMake: "",
-    //     carModel: "",
-    //     distanceHwy: 0,
-    //     startPoint: "",
-    //     endPoint: "",
-    //     totalDistance: 0,
-    //     numStops: 0,
-    //     notes: "",
-    //     img: "",
-    // })
 
     useEffect(() => {
         const fetchTrips = async () => {

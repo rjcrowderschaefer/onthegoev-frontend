@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Col, Row } from 'antd';
 
-// import {Link } from 'react-router-dom';
-
 function ChargingLocations() {
 
     const [chargingLocations, setLocations] = useState(null);
@@ -20,10 +18,6 @@ function ChargingLocations() {
             console.log(err);
         }
     };
-
-    // useEffect(() => {
-    //     fetchLocationInfo();
-    // }, [])
 
     const handleChange = (e) => {
         setZipCode(e.target.value)
@@ -58,7 +52,7 @@ function ChargingLocations() {
                                 <h4 className="charging-header">{location.station_name}</h4>
                                 <h6>Distance: {location.distance} miles</h6>
                                 <h6 className="charging-address">Address: {location.street_address}, {location.city}, {location.state}, {location.zip}</h6>
-                                <h6>Connector types: {location.ev_connector_types}</h6>
+                                <h6>Connector type(s): {location.ev_connector_types}</h6>
                                 <h6>EV network: {location.ev_network}</h6>
                             </div>
                         </Col>
@@ -68,15 +62,6 @@ function ChargingLocations() {
             </Row>
         </div>
         </>
-                
-        //     </div>
-        //     {chargingLocations && chargingLocations.fuel_stations.map((location, idx) => {
-        //         return (
-        //             <h3 key={idx}>{location.station_name}</h3>
-        //         )
-        //     })}
-            
-        // </>
     )
 }
 

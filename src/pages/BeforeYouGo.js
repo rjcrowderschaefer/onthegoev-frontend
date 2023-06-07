@@ -6,23 +6,23 @@ function BeforeYouGo(props) {
             <div className="know-before">
                 <h2 className="page-title">What to know before you go</h2>
                 <p className="page-intro">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus. 
+                If there’s one thing I learned during my trip, it’s that the key to a successful EV road trip is planning, planning, and more planning. Here are some tips for making the trip as enjoyable as possible.
                 </p>
                 <Row gutter={[0, 0]}>
                     <Col span={12}>
                         <div className="know-tips">
-                        <p className="tip"><span className="tip-num">01</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p className="tip"><span className="tip-num">01.</span> Drive in a way that maximizes your range</p>
                         <p className="tip">
-                        <span className="tip-num">02</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span className="tip-num">02.</span> Plan charging stops around activities or meal breaks
                         </p>
                         <p className="tip">
-                        <span className="tip-num">03</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span className="tip-num">03.</span> Use available apps and map out your mileage in advance
                         </p>
                         <p className="tip">
-                        <span className="tip-num">04</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span className="tip-num">04.</span> Be flexible and have a backup plan
                         </p>
                         <p className="tip">
-                        <span className="tip-num">05</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span className="tip-num">05.</span> EVs are better for urban adventures than going off the grid
                         </p>
                         </div>
                     </Col>

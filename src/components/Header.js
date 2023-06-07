@@ -39,27 +39,6 @@ function Header() {
                 </div>
             </nav>
 
-            {/* <div>
-                <ul className="2">
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li><NavLink to="/top-evs-2023">Top EVs 2023</NavLink>
-                    </li>
-                    <li><NavLink to="/before-you-go">Before You Go</NavLink>
-                    </li>
-                    <li><NavLink to="/trip-planner" activeStyle={{ color: 'red' }}>Trip Planner</NavLink>
-                    </li>
-                    <li><NavLink activeStyle={{ color: 'red' }} to="/charging-locations">Charging Stations</NavLink>
-                    </li>
-                    <li><NavLink to="/about">About</NavLink>
-                    </li>
-                    <li><NavLink to="/contact">Contact</NavLink>
-                    </li>
-                </ul>
-            </div>  */}
-
-
         </header>
         </>
     );

@@ -68,82 +68,82 @@ function CreateTrip() {
             <form onSubmit={handleSubmit}>
                 
                 <div className="form-group">
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label for="tripName">Trip Name</label>
-                            <input type="text" class="form-control" name="tripName" onChange={handleChange} placeholder="Where are you headed?"/>
+                            <input type="text" className="form-control" name="tripName" onChange={handleChange} placeholder="Where are you headed?"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label for="tripOwner">Trip Owner:</label>
-                            <input type="text" class="form-control" name="tripOwner" onChange={handleChange} placeholder="Main point of contact"/>
+                            <input type="text" className="form-control" name="tripOwner" onChange={handleChange} placeholder="Main point of contact"/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label># Travelers:</label>
-                            <input type="number" class="form-control" name="numTravelers" onChange={handleChange} placeholder="How many travelers"/>
+                            <input type="number" className="form-control" name="numTravelers" onChange={handleChange} placeholder="How many travelers"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Start Date:</label>
-                            <input type="text" class="form-control" name="tripStart" onChange={handleChange} placeholder="Start date of trip"/>
+                            <input type="text" className="form-control" name="tripStart" onChange={handleChange} placeholder="Start date of trip"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>End Date:</label>
-                            <input type="text" class="form-control" name="tripEnd" onChange={handleChange} placeholder="End date of trip"/>
+                            <input type="text" className="form-control" name="tripEnd" onChange={handleChange} placeholder="End date of trip"/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label>Car Year:</label>
-                            <input type="number" class="form-control" name="carYear" onChange={handleChange} placeholder="Car year"/>
+                            <input type="number" className="form-control" name="carYear" onChange={handleChange} placeholder="Car year"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Car Make:</label>
-                            <input type="text" class="form-control" name="carMake" onChange={handleChange} placeholder="Car make"/>
+                            <input type="text" className="form-control" name="carMake" onChange={handleChange} placeholder="Car make"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Car Model:</label>
-                            <input type="text" class="form-control" name="carModel" onChange={handleChange} placeholder="Car model"/>
+                            <input type="text" className="form-control" name="carModel" onChange={handleChange} placeholder="Car model"/>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div className="row">
+                        <div className="col">
                             <label>Start Point:</label>
-                            <input type="text" class="form-control" name="startPoint" onChange={handleChange} placeholder="Trip starting location"/>
+                            <input type="text" className="form-control" name="startPoint" onChange={handleChange} placeholder="Trip starting location"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>End Point:</label>
-                            <input type="text" class="form-control" name="endPoint" onChange={handleChange} placeholder="Trip end location"/>
+                            <input type="text" className="form-control" name="endPoint" onChange={handleChange} placeholder="Trip end location"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Total Trip Distance:</label>
-                            <input type="number" class="form-control" name="totalDistance" onChange={handleChange} placeholder="Total distance of trip"/>
+                            <input type="number" className="form-control" name="totalDistance" onChange={handleChange} placeholder="Total distance of trip"/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
                        
-                        <div class="col">
+                        <div className="col">
                             <label>Total MPC Hwy:</label>
-                            <input type="number" class="form-control" name="distanceHwy" onChange={handleChange} placeholder="Total miles per charge (hwy)"/>
+                            <input type="number" className="form-control" name="distanceHwy" onChange={handleChange} placeholder="Total miles per charge (hwy)"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Total Charges:</label>
-                            <input type="number" class="form-control" name="numStops" onChange={handleChange} placeholder="Number of stops to charge"/>
+                            <input type="number" className="form-control" name="numStops" onChange={handleChange} placeholder="Number of stops to charge"/>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label>Image:</label>
-                            <input type="file" class="form-control" name="img" onChange={handleChange} placeholder="Add trip image" />
+                            <input type="file" className="form-control" name="img" onChange={handleChange} placeholder="Add trip image" />
                         </div>
-                    <div class="row">
+                    <div className="row">
                         
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <label for="notes">Notes:</label>
-                            <textarea class="form-control" name="notes" rows="3" onChange={handleChange} placeholder="Add trip notes here" />
+                            <textarea className="form-control" name="notes" rows="3" onChange={handleChange} placeholder="Add trip notes here" />
                         </div>
                     </div>
                 </div><br />
-                <button type="submit" class="button ">Create Trip</button>
+                <button type="submit" className="button ">Create Trip</button>
             </form>
         </div>
         </>

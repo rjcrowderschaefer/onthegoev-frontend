@@ -3,21 +3,24 @@ function Home() {
         <>
             <div className='container-home'>
       <div className='home-hero'>
-      <h1 id="h1-hero"> This is the home page</h1>
-      <h2 id="h2-hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero mauris, dictum nec tristique vel, faucibus at tellus. Vivamus non lacinia justo. Pellentesque eget ex accumsan, egestas nulla ac, dictum metus. </h2>
-      <img className="hero-image" src="https://i.imgur.com/vwhyKP2.png"></img></div>
+      <div class="img-gradient">
+      <img className="hero-image" id="darken" src="https://i.imgur.com/vwhyKP2.png"></img></div>
+      <h1 id="h1-hero"><em>Where will an EV take you?</em></h1>
+      <h2 id="h2-hero">Find and compare the best electric vehicles of 2023, learn the tips and tricks you need to know before heading out on the road and find charging stations near you.</h2></div>
       <div className='home-fact1'>
-        <div id='fact1'>130,000+</div>
-        <br />public charging stations in U.S.
+      <div id='fact'><img src="https://i.imgur.com/1WPP1it.png"></img>130k+</div>
+        public charging stations in U.S.
         </div>
-      <div className='home-fact2'>$5 avg spend for 100+ miles of charge range</div>
-      <div className='home-fact3'>80% battery for 30 minutes of charging</div>
-      <div className='home-fact4'>95% uptime for charging stations</div>
-      <div className='home-fact5'>3 types of charging speeds</div>
+      <div className='home-fact2'><div id="fact"><img src="https://i.imgur.com/aLPVsTo.png"></img>$5.00</div> avg spend for 100+ miles of charge range</div>
+      <div className='home-fact3'><div id="fact"><img src="https://i.imgur.com/2sJwsJk.png"></img>80%</div> battery for 30 minutes of charging</div>
+      <div className='home-fact4'><div id="fact"><img src="https://i.imgur.com/eh4a6i5.png"></img>95%</div> uptime for charging stations</div>
+      <div className='home-fact5'><div id="fact"><img src="https://i.imgur.com/c9IqxeU.png"></img>Three</div> types of charging speeds</div>
       <div className='home-bottom-left'>
         <img id="home-image-bottom" src="https://i.imgur.com/RZ5Nb2Z.png"></img>
       </div>
-      <div className='home-bottom-right'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero mauris, dictum nec tristique vel, faucibus at tellus. Vivamus non lacinia justo. Pellentesque eget ex accumsan, egestas nulla ac, dictum metus.</div>
+      <div className='home-bottom-right'><div className="quote-text"><span id="quote-1">"</span>Electric car sales are expected to continue strongly through 2023. Over 2.3 million electric cars were sold in the first quarter, about 25% more than in the same period last year. We currently expect to see 14 million in sales by the end of 2023, representing a 35% year-on-year increase with new purchases accelerating in the second half of this year.<span id="quote-2">"</span>
+      </div>
+      </div>
     </div>
         </>
     )

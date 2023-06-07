@@ -16,21 +16,13 @@ import ChargingLocations from './pages/ChargingLocations';
 import Contact from './pages/Contact';
 import ContactConfirmation from './pages/ContactConfirmation';
 import { Route, Routes } from 'react-router-dom';
-// import { useState, useEffect } from "react";
-// import { carsLoader } from './apiCalls';
-// import logo from './logo.svg';
-// import './App.css';
 
 function App() {
 
   return (
     <>
-      {/* <header>
-        <h1>
-          <a href="/">On The Go! EV</a>
-        </h1>
-      </header> */}
       <main>
+        <div className="content-container">
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -53,7 +45,10 @@ function App() {
             <Route path='thank-you' element={<ContactConfirmation/>} />
           </Route>
         </Routes>
+        </div>
+        <div className="footer--pin">
         <Footer />
+        </div>
       </main>
     </>
   );
