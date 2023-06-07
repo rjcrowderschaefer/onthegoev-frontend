@@ -252,6 +252,30 @@ html, body {
   padding-top: 65px;
 }
 
+.trip-planner {
+  padding: 0 50px;
+}
+
+.add-trip {
+  background-color: #a7beaa;
+  font-size: 16px;
+  padding: 10px 25px;
+  display: inline;
+  border-radius: 25px;
+  margin: 0px 0px 0px 50px;
+}
+
+.trip-image {
+  width: 95%;
+  height: auto;
+  margin: 25px 0 0 30px;
+}
+
+.trip-details {
+  margin: 60px 0 0 30px;
+  padding: 0 0
+}
+
 .footer {
   /* position: fixed; */
   display: flex;

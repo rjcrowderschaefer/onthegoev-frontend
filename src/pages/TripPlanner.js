@@ -41,10 +41,48 @@ function TripPlanner() {
                 <h2 className="page-title">Planned Trips</h2>
                 <p className="page-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere at leo sit amet tempus. Donec ac volutpat lacus. Sed varius nibh nec dui viverra mollis. Fusce mattis nunc non aliquet rhoncus.</p>
             </div>
-            <Row gutter={[75, 16]} justify="left" align="top">
+            <Row gutter={[75, 15]} justify="left" align="top">
+                <Col span={24}>
+                    <div className="add-trip">
+                        <a href='/trip-planner/new'>Add New Trip</a>
+                    </div>
+                </Col>
+            </Row>
+            <Row gutter={[16]} justify="left" align="top">
                 {
                     tripInfo.map(trip => {
-                        return
+                        return (
+                            <>
+                            <Col span={8}>
+                                <div className="trip-image">
+                                    <img className="trip-image" src={trip.img} alt={trip.tripName} />
+                                </div>
+                            </Col>
+                            <Col span={8}>
+                                <div className="trip-details">
+                                    <h5>{trip.tripName}</h5>
+                                    <h5>Trip Owner: {trip.tripOwner}</h5>
+                                    <h5># Travelers: {trip.numTravelers}</h5>
+                                    <h5>Start Date: {trip.tripStart}</h5>
+                                    <h5>End Date: {trip.tripEnd}</h5>
+                                    <h5>Car: {trip.carYear} {trip.carMake} {trip.carModel}</h5>
+                                </div>
+                            </Col>
+                            <Col span={8}>
+                                <div className="trip-details">
+                                <h5>Start Point: {trip.startPoint}</h5>
+                                <h5>End Point: {trip.endPoint}</h5>
+                                <h5>Total Trip Distance: {trip.totalDistance}</h5>
+                                <h5>Total MPC Hwy: {trip.distanceHwy}</h5>
+                                <h5>Total Charges:{trip.numStops}</h5>
+                                <h5>Notes: {trip.notes}</h5>
+                                </div>
+                            </Col>
+                            <hr />
+                            </>
+                        )
+                           
+                
                     })
                 }
             </Row>
