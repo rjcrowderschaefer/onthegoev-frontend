@@ -7,6 +7,7 @@ A website focused on electric vehicles: top EVs in 2023, trip planning with an E
 3. Find charging stations near them
 
 Frontend URL: [On The Go! EV](https://main--stately-cendol-52ec85.netlify.app/)
+
 Backend URL: [On The Go! EV - Backend](https://on-the-go-ev.onrender.com/)
 
 ![Screenshot of On The Go! EV home page](https://i.imgur.com/VMcnwv1.png)
