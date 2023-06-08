@@ -12,6 +12,16 @@ Backend URL: [On The Go! EV - Backend](https://on-the-go-ev.onrender.com/)
 
 ![Screenshot of On The Go! EV home page](https://i.imgur.com/VMcnwv1.png)
 
+### Main site nav & details:
+
+1. **Home** - Welcome page with quick info & tips on the site
+2. **Top EVs of 2023** - A list of the top 10 EVs from 2023 with additional information on features, pros & cons
+3. **Before You Go** - Overview of what the end user should consider when planning a trip in an EV. Best practices, etc.
+4. **Trip Planner** - Create a new trip and include all of the relevant details, such as trip name, start point, end point, option to include multiple stops, total distance, number of stops to charge (based on vehicle miles per charge), custom notes
+5. **EV Charging Location** - Map that allows for location to be entered to display nearby charging stations
+6. **About** - Overview of the website
+7. **Contact** - Information to connect with site admins, including general information submission form
+
 ## Technologies Used
 
 The full stack application leverages the following technologies:
