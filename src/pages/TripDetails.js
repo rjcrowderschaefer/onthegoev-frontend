@@ -10,7 +10,7 @@ function TripDetails() {
     console.log(trip)
     const fetchTripDetails = async () => {
         try {
-            let data = await fetch(`http://localhost:4000/trip-planner/${id}`)
+            let data = await fetch(`https://on-the-go-ev.onrender.com/trip-planner/${id}`)
             data = await data.json();
             setTrip(data)
         } catch(err) {

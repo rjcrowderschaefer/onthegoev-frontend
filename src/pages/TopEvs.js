@@ -1,3 +1,5 @@
+// I used the US News Cars website (https://cars.usnews.com/cars-trucks/rankings/electric-vehicles) for design/UX inspiration for the top EVs cards that I created for this page. I manually pulled data points and images from the site but all code is 100% mine. The site was referenced for seed data and general design ideas.
+
 import { useState, useEffect } from 'react';
 import { carsLoader } from '../apiCalls';
 import { Col, Row } from 'antd';
@@ -32,7 +34,7 @@ function TopEvs() {
                                     <img src={car.img1} alt={car.make} />
                                 </div>
                             <h2 className="car-header"><b>#{car.rank}:</b> {car.year} {car.make} {car.model}</h2>
-                            <p className="car-review">{car.review} <a href={`top-evs-2023/${car._id}`}><br />Read more >></a></p>
+                            <p className="car-review">{car.review} <a href={`top-evs-2023/${car._id}`}><br />Read more &gt;&gt;</a></p>
                             <div className="car-card-details">
                                 <h6 className="car-score"><b>{car.score}</b> <div className="card-label">score</div></h6>
                                 <h6 className="car-msrp"><b>{car.msrpStart}</b> - <b>{car.msrpEnd}</b> <div className="card-label">MSRP</div></h6>

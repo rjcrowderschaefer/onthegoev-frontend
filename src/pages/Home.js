@@ -1,3 +1,5 @@
+// I used the image and general hero / sub icon layout from https://www.electrifyamerica.com/ for design inspiration. I saved the hero image and hosted that myself. All code is my own and I only referenced the site for visual UX ideas.
+
 function Home() {
     return (
         <>
