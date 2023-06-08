@@ -12,8 +12,6 @@ function ChargingLocations() {
             const response = await fetch(`https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?limit=24&fuel_type=ELEC&location=${zipCode}&api_key=${process.env.REACT_APP_NREL_API_KEY}`);
             const data = await response.json();
             setLocations(data);
-            console.log(response)
-            console.log(data);
         } catch(err) {
             console.log(err);
         }

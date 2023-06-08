@@ -6,8 +6,7 @@ import { Col, Row } from 'antd';
 function TripDetails() {
     const {id} = useParams();
     const [trip, setTrip] = useState(null)
-    console.log(id)
-    console.log(trip)
+    
     const fetchTripDetails = async () => {
         try {
             let data = await fetch(`https://on-the-go-ev.onrender.com/trip-planner/${id}`)

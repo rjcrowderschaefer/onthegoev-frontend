@@ -40,8 +40,6 @@ function CreateTrip() {
     };
     
 
-    console.log(tripForm);
-
     async function handleSubmit(e) {
         try {
         e.preventDefault()

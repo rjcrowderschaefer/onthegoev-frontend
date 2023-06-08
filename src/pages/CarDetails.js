@@ -6,14 +6,10 @@ function CarDetails() {
 
     const {id} = useParams();
     const [car, setCar] = useState(null)
-    console.log(id)
-    console.log(car)
     const fetchCarDetails = async () => {
         try {
             let data = await fetch (`http://localhost:4000/top-evs-2023/${id}`)
-            console.log(data)
             data = await data.json();
-            console.log(data)
             setCar(data);
         } catch(err) {
             console.log(err);
