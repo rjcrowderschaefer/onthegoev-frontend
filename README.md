@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# On The Go! EV
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website focused on electric vehicles: top EVs in 2023, trip planning with an EV, key information that an EV owner should know before embarking on a trip and a charging station search option based on zip code. The site allows the end user to:
 
-## Available Scripts
+1. Get information and general stats on electric vehicles in 2023
+2. Plan a trip to ensure the end user is aware of the number of stops they'll have to make to charge their EV
+3. Find charging stations near them
 
-In the project directory, you can run:
+Frontend URL: [On The Go! EV](https://main--stately-cendol-52ec85.netlify.app/)
+Backend URL: [On The Go! EV - Backend](https://on-the-go-ev.onrender.com/)
 
-### `npm start`
+![Screenshot of On The Go! EV home page](https://i.imgur.com/VMcnwv1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The full stack application leverages the following technologies:
 
-### `npm test`
+* React
+* MongoDB
+* Express
+* Node
+* Bootstrap
+* CSS Grid
+* [Ant Design](https://ant.design/components/overview/) (components library)
+* [React-Icons](https://react-icons.github.io/react-icons/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started/Installation Instructions
 
-### `npm run build`
+The end user can navigate to the On The Go! EV website to begin using the application immediately. Beyond the content included in the site itself, the primary user functionality includes the following areas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Trip Planning - The end user can browse existing trips (including the option to modify or delete an existing trip) or create their own trip to include in the 'planned trips' list
+* Charging Station Locations - The end user can enter in a zip code and see the closest 20 EV charging stations based on the zip code, including the station's name, address, distance away, charging types and any affiliate charging networks
+* Feedback - The end user can fill out and submit a feedback form to ask questions or provide general comments on the site and functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribution Guidelines
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions to the site are welcome. Please fork and clone this repo and submit any changes for review via dev brench pull requests.
